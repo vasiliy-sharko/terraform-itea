@@ -1,0 +1,3 @@
+[submodule "3/modules/aws-vpc"]
+	path = 3/modules/aws-vpc
+	url = https://github.com/terraform-aws-modules/terraform-aws-vpc
