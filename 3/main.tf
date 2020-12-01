@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 module "vpc" {
-  source = "./modules/terraform-aws-vpc"
+  source = "./modules/aws-vpc"
 
   name = "my-vpc"
   cidr = "10.0.0.0/16"
@@ -29,4 +29,10 @@ module "vpc" {
     Terraform = "true"
     Environment = "dev"
   }
+}
+
+module "vpc-2" {
+  source = "./modules/aws-vpc"
+
+
 }
